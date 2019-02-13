@@ -1,0 +1,7 @@
+{
+    "python.linting.pylintEnabled": false,
+    "terminal.integrated.shell.windows": "cmd.exe",
+    "terminal.integrated.env.windows": {"CMDER_ROOT": "D:\\\\cmder"},
+   "terminal.integrated.shellArgs.windows": ["/k", "D:\\\\cmder\\vendor\\init.bat"],
+
+}
