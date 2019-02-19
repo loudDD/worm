@@ -39,8 +39,11 @@ def zijipatu(url_info):
                 param = {"p":x}
                 # htmlcontent = requests.get(j,params=param)
                 url =j + "?" + "p=" + str(x)
-                driver = webdriver.Firefox()
+                op = webdriver.firefox.options.Options()
+                op.add_argument("--headless")
+                driver = webdriver.Firefox(options=op)
                 driver.get(url)
+                print(url)
                 driver.implicitly_wait(15)
                 htmlcontent = driver.page_source
                 # print(htmlcontent.url)
@@ -52,18 +55,25 @@ def zijipatu(url_info):
                 # print("photourl:",photourl)
 
                 basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])
+                print(re.findall('src=\"(.*?)"',htmlcontent)[3])
                 # print("basephoto:" , basephoto)
                 filepath = "D:/comic/" + i
                 file = filepath + "/" + str(x) + ".jpg"
                 if not os.path.exists(filepath):
                     os.makedirs(filepath)
-
                 with open(file,"wb") as f:
+                    print(basephoto.text)
                     if os.path.getsize(file) < 10:
                         f.write(basephoto.content)
+                        print("爬取" + i + str(x) + "完成")
                     f.close()
+                    if os.path.getsize(file) < 10:
+                        print("爬取失败，内容为空")
+                    else:
+                        print("爬取成功")
                     driver.quit()
         except:
+            driver.quit()
             raise ValueError
 
 
@@ -89,5 +99,6 @@ def geturl(comicpageurl):
 comicpageurl = "https://m.duzhez.com/manhua/12730/"
 
 url_info = geturl(comicpageurl)
-
+# print(url_info)
+#
 zijipatu(url_info)

@@ -28,17 +28,39 @@
 # print(replaceStr)
 
 # #sub有问题，待解决
-
-import random
-import re
-print(random.randint(1,2))
-print(round(random.random()*100))
-print(random.randrange(1,100,2))
-print(random.choice(["a","b"]))
-
-
-s = "sef,wef,sefw,fe@ ewf"
-print(re.findall(r"^w\w+", s))
-
-string = "2345  3456  4567  5678"
-print(re.findall("\w+",string))
+#
+# import random
+# import re
+# print(random.randint(1,2))
+# print(round(random.random()*100))
+# print(random.randrange(1,100,2))
+# print(random.choice(["a","b"]))
+#
+#
+# s = """sef,wef,sefw,fe@ ewf"""
+# print(re.findall("(^s)\w+f$", s))
+#
+# string = "2345  3456  4567  5678"
+# print(re.findall("\w+",string))
+#
+#
+# print(string.find("4"))
+#select user_id from A,B where a.user_id = b.xx_id and addtime
+# import re
+#
+# s = "This is a test"
+# b = re.findall(r"\w+",s)[::-1]
+# b.reverse()
+# print(b)
+# from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+import os
+# option = webdriver.firefox.options.Options()
+# option.add_argument("--headless")
+#
+# d = webdriver.Firefox(options=option)
+# d.get("https://www.baidu.com")
+# print(d.title)
+print(type(os.path.getsize(r"D:\comic\第1话\2.jpg")))
+print("fwfe",132)
+print("fwfe" + str(132))
