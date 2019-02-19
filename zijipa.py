@@ -21,6 +21,8 @@ from time import sleep
 import threading
 
 def zijipatu(url_info):
+    TODO:函数话
+    TODO:正则定位有问题
     """
     根据传入的url，来获得URL,总页数,以此来获取图片，并重命名
     注意传入的是一个列表，且前提每话的url和总页数元素定位方式相同
@@ -46,6 +48,7 @@ def zijipatu(url_info):
                 print(url)
                 driver.implicitly_wait(15)
                 htmlcontent = driver.page_source
+                print(htmlcontent)
                 # print(htmlcontent.url)
                 # image_xpath = '//*[@id="page-%d"]/@src' %(x)
                 # print("image_xpath:" , image_xpath)
@@ -54,7 +57,7 @@ def zijipatu(url_info):
                 # print("selector1: " ,selector1)
                 # print("photourl:",photourl)
 
-                basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])
+                basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])#正则获取位置问题
                 print(re.findall('src=\"(.*?)"',htmlcontent)[3])
                 # print("basephoto:" , basephoto)
                 filepath = "D:/comic/" + i
@@ -74,7 +77,7 @@ def zijipatu(url_info):
                     driver.quit()
         except:
             driver.quit()
-            raise ValueError
+            continue
 
 
 def geturl(comicpageurl):

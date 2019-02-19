@@ -2703,3 +2703,53 @@ JavaScript error: https://m.duzhez.com/static/api/js/share.js?v=89860593.js?cdnv
 *** You are running in headless mode.
 1550570638671	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
 1550570638671	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550571601929	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.rLZJHjJ3D9vA"
+*** You are running in headless mode.
+1550571602620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550571602620	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550571604520	Marionette	INFO	Listening on port 55475
+1550571604703	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550571921404	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.jaekz4Atc0eF"
+*** You are running in headless mode.
+1550571922182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550571922182	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550571923825	Marionette	INFO	Listening on port 55973
+1550571924145	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550571938285	Marionette	INFO	Stopped listening on port 55973
+[Child 23316, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 23316, Chrome_ChildThread] WARNING: pipe error[Child 17940, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 179[Parent 20048, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 25556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 25556,1550571942208	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.3iYp5EsjYtU6"
+*** You are running in headless mode.
+1550571943026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550571943027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550571944578	Marionette	INFO	Listening on port 56067
+1550571944945	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550571949940	Marionette	INFO	Stopped listening on port 56067
+[Child 3088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 3088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chro[miPum/sarent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 24508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 24508, Chrome_ChildThread] WARNING: pipe error: 109:JavaScript error: jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 597: TypeError: this.tablesData[table] is undefined
+[Parent 11904, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+1550571953994	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.zjcsCT9levuE"
+*** You are running in headless mode.
+1550571954528	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550571954529	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550571956113	Marionette	INFO	Listening on port 56156
+1550571956138	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550571989350	Marionette	INFO	Stopped listening on port 56156
+[Child 21004, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 21[Child 24480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 21550572185662	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.ugq5OU6Lp8Sd"
+*** You are running in headless mode.
+1550572186350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550572186350	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550572187829	Marionette	INFO	Listening on port 56481
+1550572187919	Marionette	WARN	TLS certificate errors will be ignored for this session
+1550572194642	Marionette	INFO	Stopped listening on port 56481
+[Child 6428, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 6428, Chrome_ChildThr1550572198564	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\wawq1\\AppData\\Local\\Temp\\rust_mozprofile.eVvOVVwwb5yz"
+*** You are running in headless mode.
+1550572199579	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550572199579	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
