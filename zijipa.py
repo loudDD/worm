@@ -21,8 +21,8 @@ from time import sleep
 import threading
 
 def zijipatu(url_info):
-    TODO:函数话
-    TODO:正则定位有问题
+    TODO:#函数话
+    TODO:#正则定位有问题
     """
     根据传入的url，来获得URL,总页数,以此来获取图片，并重命名
     注意传入的是一个列表，且前提每话的url和总页数元素定位方式相同
