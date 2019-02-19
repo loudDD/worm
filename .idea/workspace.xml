@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80b90223-1a92-47b2-b07c-411332d2e2d5" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/re_retry.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/withCpacha.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/worm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/worm.iml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/geckodriver.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zijipa.py" beforeDir="false" afterPath="$PROJECT_DIR$/zijipa.py" afterDir="false" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +57,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/try.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-282">
               <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+=======
+            <state relative-caret-position="1365">
+              <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
             </state>
           </provider>
         </entry>
@@ -61,8 +71,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/withCpacha.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="101">
               <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+=======
+            <state relative-caret-position="545">
+              <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -71,10 +86,56 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/re_retry.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
               <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+=======
+        <entry file="file://$PROJECT_DIR$/note.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getcookies.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requestsSession.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zijipa.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+              <folding>
+                <element signature="e#345#360#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/try.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1216">
+              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
             </state>
           </provider>
         </entry>
@@ -97,13 +158,13 @@
         <option value="$PROJECT_DIR$/lxml.py" />
         <option value="$PROJECT_DIR$/uselxml.py" />
         <option value="$PROJECT_DIR$/beautifulSoupuse.py" />
-        <option value="$PROJECT_DIR$/zijipa.py" />
         <option value="$PROJECT_DIR$/正则.py" />
         <option value="$PROJECT_DIR$/note.py" />
         <option value="$PROJECT_DIR$/getcookies.py" />
         <option value="$PROJECT_DIR$/requestsSession.py" />
         <option value="$PROJECT_DIR$/123.txt" />
         <option value="$PROJECT_DIR$/try.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/re_retry.py" />
         <option value="$PROJECT_DIR$/withCpacha.py" />
       </list>
@@ -120,6 +181,17 @@
     <option name="y" value="172" />
     <option name="width" value="961" />
     <option name="height" value="583" />
+=======
+        <option value="$PROJECT_DIR$/zijipa.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2" />
+    <option name="y" value="157" />
+    <option name="width" value="1002" />
+    <option name="height" value="869" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -165,7 +237,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.withCpacha">
+=======
+  <component name="RunManager" selected="Python.zijipa">
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
     <configuration name="正则" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="worm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -285,9 +361,13 @@
     </list>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.withCpacha" />
         <item itemvalue="Python.try" />
+=======
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
         <item itemvalue="Python.zijipa" />
+        <item itemvalue="Python.try" />
         <item itemvalue="Python.正则" />
         <item itemvalue="Python.beautifulSoupuse" />
       </list>
@@ -307,8 +387,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="479" y="172" width="961" height="583" extended-state="0" />
     <editor active="true" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22524484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -323,7 +407,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2624729" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25921908" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Database" />
@@ -366,9 +450,23 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/uselxml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
+=======
+    <entry file="file://$PROJECT_DIR$/123.txt" />
+    <entry file="file://$PROJECT_DIR$/正则.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="65" column="11" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uselxml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
           <caret line="27" column="53" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -378,8 +476,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/正则.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="89">
           <caret line="76" column="9" lean-forward="true" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="9" />
+=======
+        <state relative-caret-position="148">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
         </state>
       </provider>
     </entry>
@@ -392,11 +495,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requestsSession.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="88">
+=======
+        <state relative-caret-position="84">
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
           <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/zijipa.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -420,6 +528,21 @@
           <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/try.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zijipa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="e#345#360#0" expanded="true" />
+>>>>>>> f5bc2b1146b2ff1e02ecf491f38a9f8b57435254
           </folding>
         </state>
       </provider>

@@ -1,4 +1,6 @@
 """
+
+请不要使用
 https://m.duzhez.com/manhua/12730/473308.html?p=2
 https://m.duzhez.com/manhua/12730/
 
@@ -19,6 +21,8 @@ from time import sleep
 import threading
 
 def zijipatu(url_info):
+    TODO:#函数话
+    TODO:#正则定位有问题
     """
     根据传入的url，来获得URL,总页数,以此来获取图片，并重命名
     注意传入的是一个列表，且前提每话的url和总页数元素定位方式相同
@@ -37,10 +41,14 @@ def zijipatu(url_info):
                 param = {"p":x}
                 # htmlcontent = requests.get(j,params=param)
                 url =j + "?" + "p=" + str(x)
-                driver = webdriver.Firefox()
+                op = webdriver.firefox.options.Options()
+                op.add_argument("--headless")
+                driver = webdriver.Firefox(options=op)
                 driver.get(url)
+                print(url)
                 driver.implicitly_wait(15)
                 htmlcontent = driver.page_source
+                print(htmlcontent)
                 # print(htmlcontent.url)
                 # image_xpath = '//*[@id="page-%d"]/@src' %(x)
                 # print("image_xpath:" , image_xpath)
@@ -49,20 +57,27 @@ def zijipatu(url_info):
                 # print("selector1: " ,selector1)
                 # print("photourl:",photourl)
 
-                basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])
+                basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])#正则获取位置问题
+                print(re.findall('src=\"(.*?)"',htmlcontent)[3])
                 # print("basephoto:" , basephoto)
                 filepath = "D:/comic/" + i
                 file = filepath + "/" + str(x) + ".jpg"
                 if not os.path.exists(filepath):
                     os.makedirs(filepath)
-
                 with open(file,"wb") as f:
+                    print(basephoto.text)
                     if os.path.getsize(file) < 10:
                         f.write(basephoto.content)
+                        print("爬取" + i + str(x) + "完成")
                     f.close()
+                    if os.path.getsize(file) < 10:
+                        print("爬取失败，内容为空")
+                    else:
+                        print("爬取成功")
                     driver.quit()
         except:
-            raise ValueError
+            driver.quit()
+            continue
 
 
 def geturl(comicpageurl):
@@ -87,5 +102,6 @@ def geturl(comicpageurl):
 comicpageurl = "https://m.duzhez.com/manhua/12730/"
 
 url_info = geturl(comicpageurl)
-
+# print(url_info)
+#
 zijipatu(url_info)
