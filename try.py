@@ -61,6 +61,15 @@ import os
 # d = webdriver.Firefox(options=option)
 # d.get("https://www.baidu.com")
 # print(d.title)
-print(type(os.path.getsize(r"D:\comic\第1话\2.jpg")))
-print("fwfe",132)
-print("fwfe" + str(132))
+# print(type(os.path.getsize(r"D:\comic\第1话\2.jpg")))
+# print("fwfe",132)
+# print("fwfe" + str(132))
+
+import requests
+from lxml import etree
+
+res = requests.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
+print("text:" ,res.text)
+sel = etree.HTML(res.text)
+xpa = sel.xpath('//*[@id="page-2"]/@src')
+print(xpa)

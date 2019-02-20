@@ -25,4 +25,4 @@ sel = etree.HTML(response.text)
 b = sel.xpath(xpath)
 sel.xpath("//li[starts-with(@class,'item-')]/a/text()")#范围取值，使用相似的属相，如都已xxx开头
 print(b)
-sel.xpath("String(//ul)")#ul下所有文本，默认只是ul中文本，而不包括li中文本
+# sel.xpath("String(//ul)")#ul下所有文本，默认只是ul中文本，而不包括li中文本
