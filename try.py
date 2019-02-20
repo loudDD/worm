@@ -1,3 +1,4 @@
+#coding=utf-8
 # import re
 # #1、匹配一行文字中的所有开头的字母内容
 # s = "i love you not because of who you are, but because of who i am when i am with you"
@@ -61,6 +62,12 @@ import os
 # d = webdriver.Firefox(options=option)
 # d.get("https://www.baidu.com")
 # print(d.title)
-print(type(os.path.getsize(r"D:\comic\第1话\2.jpg")))
-print("fwfe",132)
-print("fwfe" + str(132))
+# print(type(os.path.getsize(r"D:\comic\第1话\2.jpg")))
+# print("fwfe",132)
+# print("fwfe" + str(132))
+
+from selenium import webdriver
+
+d = webdriver.Firefox()
+d.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
+print (d.page_source)
