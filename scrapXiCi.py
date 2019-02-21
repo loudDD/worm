@@ -22,21 +22,24 @@ class Scrapxici():
         res = requests.get(self.url,headers = self.header)
         # print(res.status_code)
         for i in range(1,x):
-            sel = etree.HTML(res.text)
-            tablepath = '//*[@class="odd"]'+"["+str(i)+"]"
-            ip = sel.xpath("".join((tablepath,self.ippath)))[0]
-            port = sel.xpath("".join((tablepath,self.portpath)))[0]
-            http_s = sel.xpath("".join((tablepath,self.http_spath)))[0]
-            url = {http_s.lower():http_s.lower() + "://" + ip + ":" + port}
-            # print(url)
-            if self.verify_proxy(url):
-                proxy_list.append(self.verify_proxy(url))
-                print(proxy_list)
-            else:
-                continue
-            if len(proxy_list) > 4:
-                print ("可用代理为：",proxy_list)
-                return proxy_list
+            try:
+                sel = etree.HTML(res.text)
+                tablepath = '//*[@class="odd"]'+"["+str(i)+"]"
+                ip = sel.xpath("".join((tablepath,self.ippath)))[0]
+                port = sel.xpath("".join((tablepath,self.portpath)))[0]
+                http_s = sel.xpath("".join((tablepath,self.http_spath)))[0]
+                url = {http_s.lower():http_s.lower() + "://" + ip + ":" + port}
+                # print(url)
+                if self.verify_proxy(url):
+                    proxy_list.append(self.verify_proxy(url))
+                    print(proxy_list)
+                else:
+                    continue
+                if len(proxy_list) > 4:
+                    print ("可用代理为：",proxy_list)
+                    return proxy_list
+            except Exception as e:
+                print ("发生错误：",e)
     def verify_proxy(self,proxy):
         try:
             print("测试代理：",proxy)

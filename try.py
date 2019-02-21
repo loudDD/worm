@@ -90,6 +90,11 @@ import os
 #     print(x)
 
 import requests
-requests.get("https://www.baidu.com",timeout=1,proxies=None)
+
+try:
+    requests.get("https://www.baidu.com",timeout=0.0001)
+except  Exception as e:
+    print (e)
+
 if None:
-    print(123)
+    print (123)

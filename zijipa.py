@@ -66,10 +66,11 @@ def zijipatu(pre_url):
                 image_url = driver.find_element_by_xpath('//*[@id="page-%d"]' %(x)).get_attribute("src")
                 #("//*[@id="page-{}]").format(x)
                 driver.quit()
-            except:
+            except Exception as e:
+                driver.quit()
                 fail_list.append("获取源地址..."+"第" + str(x) + "张"+"失败")
                 print("获取源地址...","失败")
-                driver.quit()
+                print ("错误是：",e)
                 continue
             # print ("    图片源地址为：" , image_url)
             basephoto = requests.get(image_url,headers=header,proxies=proxy)
