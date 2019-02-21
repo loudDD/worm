@@ -1,3 +1,4 @@
+#coding=utf-8
 # import re
 # #1、匹配一行文字中的所有开头的字母内容
 # s = "i love you not because of who you are, but because of who i am when i am with you"
@@ -65,11 +66,19 @@ import os
 # print("fwfe",132)
 # print("fwfe" + str(132))
 
-import requests
-from lxml import etree
 
-res = requests.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
-print("text:" ,res.text)
-sel = etree.HTML(res.text)
-xpa = sel.xpath('//*[@id="page-2"]/@src')
-print(xpa)
+# import requests
+# from lxml import etree
+#
+# res = requests.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
+# print("text:" ,res.text)
+# sel = etree.HTML(res.text)
+# xpa = sel.xpath('//*[@id="page-2"]/@src')
+# print(xpa)
+
+from selenium import webdriver
+
+d = webdriver.Firefox()
+d.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
+print (d.page_source)
+

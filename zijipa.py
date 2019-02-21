@@ -24,47 +24,34 @@ import threading
 
 
 header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.109 Safari/537.36"}
-def zijipatu(url_info):
-    #TODO:函数话
-    #TODO:正则定位有问题
-    """
-    根据传入的url，来获得URL,总页数,以此来获取图片，并重命名
-    注意传入的是一个列表，且前提每话的url和总页数元素定位方式相同
-    :param url:
-    :return:
-    """
 
-    for i,j in url_info.items():
-        # header = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.81 Safari/537.36"}
-        page_info = requests.get(j,headers = header)
+def zijipatu(pre_url):
+    #TODO:每一话遍历
+    #TODO:webdriver获取url地址是否正确
+    for i,j in pre_url.items():
+        """
+        i=每一话名字，做文件夹名
+        j=每一话前置地址，拼接得到url
+        用url得到页面信息，通过页面信息得到图片源地址
+        """
+        page_info = requests.get(j,headers=header)
         selector = etree.HTML(page_info.text)
         total_page = int(selector.xpath('//*[@id="total-page"]/text()')[0])
-        print("开始爬取：" ,i)
-        print("    初始地址为：",j)
-        # print(total_page)
         try:
             for x in range(2,total_page+1):
-                # param = {"p":x}
+                print ("开始爬取：" , i,"第" + str(x) +"张")
+                param = {"p":x}
                 # htmlcontent = requests.get(j,params=param)
                 url =j + "?" + "p=" + str(x)
-                htmlcontent = requests.get(url,headers = header)
-                # op = webdriver.firefox.options.Options()
-                # op.add_argument("--headless")
-                # driver = webdriver.Firefox(options=op)
-                # driver.get(url)
-                # print(url)
-                # driver.implicitly_wait(15)
-                # htmlcontent = driver.page_source
-                print("    爬取页面地址：" , url)
-                image_xpath = '//*[@id="page-%d"]/@src' %(x)
-                print("    图片xpath为:" , image_xpath)
-                selector1 = etree.HTML(htmlcontent.text)
-                photourl = selector1.xpath(image_xpath)[0]
-                # print("selector1: " ,selector1)
-                print("    图片源地址为:",photourl)
-
-                # basephoto = requests.get(re.findall('src=\"(.*?)"',htmlcontent)[3])#正则获取位置问题
-                # print(re.findall('src=\"(.*?)"',htmlcontent)[3])
+                print(url)
+                op = webdriver.firefox.options.Options()
+                op.add_argument("--headless")
+                driver = webdriver.Firefox(options=op)
+                driver.get(url)
+                driver.implicitly_wait(15)
+                image_url = driver.find_element_by_xpath('//*[@id="page-2"]').get_attribute("src")
+                print (image_url)
+                basephoto = requests.get(image_url,headers=header)#正则获取位置问题
                 # print("basephoto:" , basephoto)
                 basephoto = requests.get(photourl,headers=header)
                 filepath = "D:/comic/" + i
@@ -84,6 +71,7 @@ def zijipatu(url_info):
         except:
             # driver.quit()
             continue
+
 
 
 def geturl(comicpageurl):
@@ -113,3 +101,4 @@ url_info = geturl(comicpageurl)
 # print(url_info)
 #
 zijipatu(url_info)
+
