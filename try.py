@@ -76,9 +76,20 @@ import os
 # xpa = sel.xpath('//*[@id="page-2"]/@src')
 # print(xpa)
 
-from selenium import webdriver
+# from selenium import webdriver
+#
+# d = webdriver.Firefox()
+# d.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
+# print (d.page_source)
 
-d = webdriver.Firefox()
-d.get("https://m.duzhez.com/manhua/12730/473308.html?p=2")
-print (d.page_source)
+# import random
+#
+# print(random.choice("元祖，字符串，列表"))
+# a = {1:13,1:23}
+# for x in a.items():
+#     print(x)
 
+import requests
+requests.get("https://www.baidu.com",timeout=1,proxies=None)
+if None:
+    print(123)

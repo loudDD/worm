@@ -27,23 +27,30 @@ class Scrapxici():
             ip = sel.xpath("".join((tablepath,self.ippath)))[0]
             port = sel.xpath("".join((tablepath,self.portpath)))[0]
             http_s = sel.xpath("".join((tablepath,self.http_spath)))[0]
-            url = http_s.lower() + "://" + ip + ":" + port
-            print(url)
+            url = {http_s.lower():http_s.lower() + "://" + ip + ":" + port}
+            # print(url)
             if self.verify_proxy(url):
                 proxy_list.append(self.verify_proxy(url))
+                print(proxy_list)
+            else:
+                continue
             if len(proxy_list) > 4:
-                print (proxy_list)
+                print ("可用代理为：",proxy_list)
+                return proxy_list
     def verify_proxy(self,proxy):
         try:
-            r = requests.get(url="https://jsonip.com",proxies=proxy)
+            print("测试代理：",proxy)
+            r = requests.get(url="https://jsonip.com",proxies=proxy,timeout=3)
             # if r.status_code == 200:
             #     # return proxy
-            #     print("有效")
+            print("        有效")
             return proxy
         except:
-            print ("无效")
+            print ("        无效")
 
-
-a = Scrapxici()
-a.getXiCitext(50)
+if __name__ == "__main__":
+    a = Scrapxici()
+    a.getXiCitext(100)
 # a.verify_proxy("234")
+
+# b =requests.get(url="https://www.baidu.com",proxies={"https":"https://111.177.176.173:9999"})
